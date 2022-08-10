@@ -30,7 +30,7 @@ const Promociones = () => {
                             <div className="card-body">
                                 <p className="card-text mb-1">Fecha inicio: {props.data.f_inicial}</p>  
                                 <p className="card-text">Fecha fin: {props.data.f_final}</p> 
-                                <p className="card-text">Cantidad: {props.data.Cantidad} desuento</p>  
+                                <p className="card-text">Cantidad: {props.data.Cantidad}% descuento</p>  
                             </div>
                         </div>
                         <div className="col-md-5">

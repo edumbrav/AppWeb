@@ -10,7 +10,7 @@ const Reset = (props) => {
     const procesarDatos = e => {
         e.preventDefault()
         if(!email.trim()){
-            console.log('Datos vacíos email!')
+            //console.log('Datos vacíos email!')
             setError('Datos vacíos email!')
             return
         }
@@ -24,7 +24,7 @@ const Reset = (props) => {
     const recuperar = React.useCallback(async () => {
         try {
             await auth.sendPasswordResetEmail(email)
-            console.log('correo enviado')
+            alert('Se acaba de enviar un mensaje a su correo para restablecer su contraseña');
             props.history.push('login')
         } catch (error) {
             console.log(error)

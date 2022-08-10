@@ -12,7 +12,7 @@ export default function  RoomFinal({room}){
         const obtenerDatos = async (room) => {
             // eslint-disable-next-line react-hooks/exhaustive-deps
             
-            console.log(parseInt(room, 10))
+            //console.log(parseInt(room, 10))
               try {
                 if (room === "Habitaciones"){
                     const snapshot = await db.collection('productos').get();

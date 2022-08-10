@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+/* import React, { Component } from 'react'
 import { RoomContext } from '../context';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
@@ -158,4 +158,4 @@ export default class Booknow extends Component {
         </div>
         )
     }
-}
+} */

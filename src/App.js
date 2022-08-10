@@ -22,6 +22,10 @@ import RoomProvider from './context/RoomProvider'
 import Actividades from './pages/Actividades';
 import Promociones from './pages/Promociones';
 import RoomsProvider from './context/RoomsProvider';
+import ReservaP from './pages/ReservasPendientes';
+import ReservasC from './pages/ReservasCancelada';
+import ReservasF from './pages/ReservasFinalizadas';
+import PreReserva from './pages/preReserva';
 
 function App(props) {
   const [firebaseUser, setFirebaseUser] = React.useState(false)
@@ -48,6 +52,9 @@ function App(props) {
           <RoomProvider>
           <RoomsProvider>
           <Route exact path="/Reserva/" component={Reserva}/>
+          <Route exact path="/ReservaP/" component={ReservaP}/>
+          <Route exact path="/ReservasC/" component={ReservasC}/>
+          <Route exact path="/ReservasF/" component={ReservasF}/>
           <Route exact path="/rooms/" component={Rooms}/>
           <Route exact path="/Login/" component={Login}/>
           <Route exact path="/Profile/" component={Profile}/>

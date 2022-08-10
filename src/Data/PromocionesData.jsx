@@ -3,7 +3,7 @@ import Promociones from '../Models/Promocion.jsx';
 
 export const getPromociones = async () => {
     try {
-        const response = await db.collection('Promociones');
+        const response = await db.collection('Promociones').where("existencia","==",true);
         const data = await response.get();
         let array = [];
         data.forEach(doc => {
